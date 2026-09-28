@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "ir",
+      "display_name": "R"
+    },
+    "language_info": {
+      "name": "R"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "id": "S-FPH4f9DVRk",
+        "outputId": "0340e5f7-bf41-4048-f110-013b93c32351"
+      },
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "5"
+            ],
+            "text/markdown": "5",
+            "text/latex": "5",
+            "text/plain": [
+              "[1] 5"
+            ]
+          },
+          "metadata": {}
+        }
+      ],
+      "source": [
+        "find_median <- function(x) {\n",
+        "    x <- sort(x)\n",
+        "      n <- length(x)\n",
+        "        if (n %% 2 == 1) {\n",
+        "            x[(n + 1) / 2]\n",
+        "              } else {\n",
+        "                  (x[n / 2] + x[n / 2 + 1]) / 2\n",
+        "                    }\n",
+        "                    }\n",
+        "                    X <- c(3, 7, 2, 9, 5)\n",
+        "                    find_median(X)"
+      ]
+    }
+  ]
+}
